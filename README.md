@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RCCIIT Wall Magazine - MCA 21-23
 
 A web platform showcasing the Wall Magazine for the MCA 2021-2023 batch of RCC Institute of Information Technology (RCCIIT), Kolkata.
