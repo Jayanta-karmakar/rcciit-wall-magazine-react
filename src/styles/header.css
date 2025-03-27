@@ -1,0 +1,76 @@
+/* Header Specific Styles */
+.topnav {
+    background-color: var(--primary);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .topnav a {
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1.2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .topnav a:not(.icon):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .topnav a.active {
+    background-color: var(--secondary);
+  }
+  
+  .topnav a.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent);
+  }
+  
+  .topnav .icon {
+    display: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+    
+    .topnav a.icon {
+      display: block;
+    }
+    
+    .topnav.responsive {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .topnav.responsive a {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+  }
